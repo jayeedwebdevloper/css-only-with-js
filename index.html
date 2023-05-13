@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM by Jayeed</title>
+</head>
+
+<body id="body">
+    <div id="row">
+        <div class="col-3">
+            <div class="card">
+                <div class="image">
+                    <h5>px</h5>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, ratione reprehenderit fugit quae nisi
+                    molestiae illum mollitia incidunt aliquam magnam?</p>
+                <button>buy</button>
+            </div>
+        </div>
+        <div class="col-3">
+            <div class="card">
+                <div class="image">
+                    <h5>px</h5>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, ratione reprehenderit fugit quae nisi
+                    molestiae
+                    illum mollitia incidunt aliquam magnam?</p>
+                <button>buy</button>
+            </div>
+        </div>
+        <div class="col-3">
+            <div class="card">
+                <div class="image">
+                    <h5>px</h5>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, ratione reprehenderit fugit quae nisi
+                    molestiae
+                    illum mollitia incidunt aliquam magnam?</p>
+                <button>buy</button>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        let bodys = document.body;
+        bodys.style.margin = 0;
+        bodys.style.padding = 0;
+
+        let continaer = document.getElementById('row');
+        console.log(continaer);
+        continaer.style.display = 'flex';
+        continaer.style.padding = '10px';
+
+
+        const card = document.getElementsByClassName('card');
+        console.log(card)
+        for (let i = 0; i <= card.length; i++) {
+            card[i].style.paddingTpp = '5px';
+            card[i].style.paddingBottom = '15px';
+            card[i].style.paddingLeft = '20px';
+            card[i].style.paddingRight = '10px';
+            card[i].style.border = '1px solid #000';
+            card[i].style.borderRadius = '10px';
+            card[i].style.boxShadow = '0 0 5px #000';
+            card[i].style.margin = '5px';
+        }
+
+        let button = document.getElementsByTagName('button');
+        console.log(button);
+        button.style.paddingTop = '10px';
+
+    </script>
+</body>
+
+</html>
