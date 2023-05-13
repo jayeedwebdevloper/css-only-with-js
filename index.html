@@ -55,13 +55,28 @@
         continaer.style.display = 'flex';
         continaer.style.padding = '10px';
 
+        let img = document.getElementsByClassName('image');
+        console.log(img);
+        for (let i = 0; i < img.length; i++) {
+            img[i].style.width = '100%';
+            img[i].style.height = '200px';
+            img[i].style.backgroundColor = 'gray';
+            img[i].style.borderRadius = '10px';
+            img[i].style.borderRadius = '10px';
+            img[i].style.display = 'flex';
+            img[i].style.justifyContent = 'center';
+            img[i].style.alignItems = 'center';
+            img[i].style.marginTop = '10px';
+            img[i].style.fontSize = '30px';
+            img[i].style.color = '#fff';
+        }
 
         const card = document.getElementsByClassName('card');
         console.log(card)
-        for (let i = 0; i <= card.length; i++) {
-            card[i].style.paddingTpp = '5px';
+        for (let i = 0; i < card.length; i++) {
+            card[i].style.paddingTpp = '10px';
             card[i].style.paddingBottom = '15px';
-            card[i].style.paddingLeft = '20px';
+            card[i].style.paddingLeft = '10px';
             card[i].style.paddingRight = '10px';
             card[i].style.border = '1px solid #000';
             card[i].style.borderRadius = '10px';
@@ -71,7 +86,18 @@
 
         let button = document.getElementsByTagName('button');
         console.log(button);
-        button.style.paddingTop = '10px';
+        for (let i = 0; i < button.length; i++) {
+            button[i].style.paddingTop = '5px';
+            button[i].style.paddingBottom = '5px';
+            button[i].style.paddingLeft = '15px';
+            button[i].style.paddingRight = '15px';
+            button[i].style.cursor = 'pointer';
+            button[i].style.textTransform = 'capitalize';
+            button[i].style.backgroundColor = '#319288';
+            button[i].style.color = '#fff';
+            button[i].style.borderRadius = '5px';
+            button[i].style.border = 'none';
+        }
 
     </script>
 </body>
